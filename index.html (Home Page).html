@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecommerce | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <!-- Left: Logo -->
+    <div class="logo">
+      <img src="assets/logo.png" alt="Brand Logo">
+      <h1>Brand</h1>
+    </div>
+
+    <!-- Middle: Search Bar -->
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search for products...">
+      <select>
+        <option value="all">All Categories</option>
+        <option value="electronics">Electronics</option>
+        <option value="fashion">Fashion</option>
+      </select>
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <!-- Right: Profile/Orders -->
+    <nav class="nav">
+      <a href="#">Profile</a>
+      <a href="#">Messages</a>
+      <a href="#">Orders</a>
+    </nav>
+  </header>
+
+  <!-- ================= MENU BAR ================= -->
+  <nav class="menu-bar">
+    <a href="#">All Categories</a>
+    <a href="#">Hot Offers</a>
+    <a href="#">Gift Boxes</a>
+    <a href="#">Projects</a>
+    <a href="#">Help</a>
+  </nav>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero">
+    <!-- Left: Categories -->
+    <aside class="categories">
+      <ul>
+        <li>Automobiles</li>
+        <li>Clothes & Wear</li>
+        <li>Home Interiors</li>
+        <li>Computer & Tech</li>
+        <li>Sports & Outdoor</li>
+      </ul>
+    </aside>
+
+    <!-- Middle: Banner -->
+    <div class="banner">
+      <h2>Latest Trending <span>Electronic Items</span></h2>
+      <button class="btn-primary">Learn More</button>
+    </div>
+
+    <!-- Right: User Box -->
+    <aside class="side-box">
+      <p><strong>Hi, User</strong><br> Let’s get started</p>
+      <button class="btn-primary">Join Now</button>
+      <button class="btn-secondary">Log In</button>
+    </aside>
+  </section>
+
+  <!-- ================= FEATURED PRODUCTS ================= -->
+  <section class="products">
+    <h3>🔥 Deals & Offers</h3>
+    <div class="product-grid" id="featuredProducts">
+      <!-- JS will load products here -->
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>© 2025 Brand. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

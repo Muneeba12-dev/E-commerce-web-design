@@ -1,0 +1,82 @@
+/* ===== VARIABLES ===== */
+:root {
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --bg-light: #f8f9fa;
+  --text-dark: #333;
+}
+
+/* ===== GENERAL ===== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  color: var(--text-dark);
+  background: #fff;
+}
+
+/* ===== HEADER ===== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: var(--bg-light);
+  border-bottom: 1px solid #ddd;
+}
+
+/* Logo */
+.logo { display: flex; align-items: center; gap: 10px; }
+
+/* Search Bar */
+.search-bar { flex: 1; display: flex; gap: 10px; }
+.search-bar input, .search-bar select, .search-bar button {
+  padding: 10px; border: 1px solid #ddd;
+}
+.search-bar button {
+  background: var(--primary); color: white; cursor: pointer;
+}
+.search-bar button:hover { background: #0056b3; }
+
+/* ===== NAV MENU ===== */
+.menu-bar {
+  display: flex; gap: 20px; padding: 10px 30px;
+  background: white; border-bottom: 1px solid #ddd;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px; padding: 20px 30px;
+}
+.banner {
+  background: linear-gradient(to right, #e6f7ff, #ffffff);
+  padding: 40px; display: flex; flex-direction: column; justify-content: center;
+}
+.banner h2 span { color: var(--primary); }
+.side-box { background: var(--bg-light); padding: 20px; border-radius: 10px; }
+
+/* ===== BUTTONS ===== */
+.btn-primary, .btn-secondary {
+  padding: 10px 15px; border: none; cursor: pointer; margin-top: 10px;
+}
+.btn-primary { background: var(--primary); color: white; }
+.btn-secondary { background: var(--secondary); color: white; }
+
+/* ===== PRODUCTS ===== */
+.products { padding: 30px; }
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+.card {
+  border: 1px solid #ddd; padding: 15px; text-align: center;
+  border-radius: 10px; transition: transform 0.3s;
+}
+.card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+
+/* ===== FOOTER ===== */
+.footer {
+  background: #222; color: white; text-align: center; padding: 15px; margin-top: 20px;
+}
